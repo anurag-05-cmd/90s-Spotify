@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>90s Spotify</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Major+Mono+Display&family=Orbitron&display=swap" rel="stylesheet"/>
+    <script src="script.js"></script>
+        </head>
+        <body>
+            <div class="navbar">
+                <div class="logo">90s Spotify</div>
+                <div class="search-bar">
+                    <input placeholder="Search..." type="text"/>
+                </div>
+                <div class="auth-links">
+                    <a href="#">Sign Up</a>
+                    <a href="../Profile/index.html">Profile</a>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../My Library/index.html">My Library</a>
+                <a href="../Top Albums/index.html">Top Albums</a>
+                <a href="../Top Artists/index.html">Top Artists</a>
+                <a href="../Top Playlists/index.html">Top Playlists</a>
+            </div>
+            <div class="content">
+                <h2 class="text-center text-2xl mb-8">Trending Songs</h2>
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="text-xl mb-4">In your Country</h3>
+                        <div class="song-item" data-song="Song 1">
+                            <img alt="Album cover for Song 1" height="50" src="https://c.saavncdn.com/430/Dil-Se-Hindi-1998-20210226142402-500x500.jpg" width="50"/>
+                            <span>"Chaiyya Chaiyya" – Dil Se (1998)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 2">
+                            <img alt="Album cover for Song 2" height="50" src="https://m.media-amazon.com/images/M/MV5BMTRkMTFhMzMtOWViMi00NzBhLTg2Y2QtMjBkMDQxNzRiZWI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="50"/>
+                            <span>"Pehla Nasha" – Jo Jeeta Wohi Sikandar (1992)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 3">
+                            <img alt="Album cover for Song 3" height="50" src="https://www.yashrajfilms.com/images/default-source/Music/dilwale-dulhania-le-jayenge.jpg?sfvrsn=162dcfcc_4" width="50"/>
+                            <span>"Tujhe Dekha To" – Dilwale Dulhania Le Jayenge (1995)</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3 class="text-xl mb-4">WorldWide</h3>
+                        <div class="song-item" data-song="Song 4">
+                            <img alt="Album cover for Song 4" height="50" src="https://e.snmc.io/i/1200/s/9d04b730f99be689d08761a67b730d06/5489523" width="50"/>
+                            <span>"Smells Like Teen Spirit" – Nirvana (1991)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 5">
+                            <img alt="Album cover for Song 5" height="50" src="https://i.scdn.co/image/ab67616d0000b2735a3520aed74e0e644d4c7001" width="50"/>
+                            <span>"My Heart Will Go On" – Celine Dion (Titanic, 1997)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 6">
+                            <img alt="Album cover for Song 6" height="50" src="https://m.media-amazon.com/images/M/MV5BOTc0OTg2OTMtODE0Yy00YjAwLWIxNTUtNzQ2NTk3ZjNjYTkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="50"/>
+                            <span>"Wonderwall" – Oasis (1995)</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3 class="text-xl mb-4">By Genre</h3>
+                        <div class="song-item" data-song="Song 7">
+                            <img alt="Album cover for Song 7" height="50" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/..._Baby_One_More_Time_%28International%29.png/220px-..._Baby_One_More_Time_%28International%29.png" width="50"/>
+                            <span>Pop: "Baby One More Time" – Britney Spears (1998)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 8">
+                            <img alt="Album cover for Song 8" height="50" src="https://images.genius.com/e904720630be29fbd958568d7c2fa991.1000x1000x1.jpg" width="50"/>
+                            <span>Rock: "November Rain" – Guns N’ Roses (1991)</span>
+                        </div>
+                        <div class="song-item" data-song="Song 9">
+                            <img alt="Album cover for Song 9" height="50" src="https://upload.wikimedia.org/wikipedia/commons/d/db/California_Love_%281995%29%2C_by_Tupac_Shakur.png" width="50"/>
+                            <span>Hip-Hop: "California Love" – 2Pac feat. Dr. Dre (1995)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="controls">
+                    <i class="fas fa-backward" id="prevBtn"></i>
+                    <i class="fas fa-play" id="playPauseBtn"></i>
+                    <i class="fas fa-forward" id="nextBtn"></i>
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="progress-bar">
+                    <input id="progressBar" max="100" min="0" type="range" value="0"/>
+                </div>
+                <div class="volume-control">
+                    <i class="fas fa-volume-down"></i>
+                    <input max="100" min="0" type="range" value="50"/>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+            <div class="footer">
+                © <a href="https://www.linkedin.com/in/anurag-deb-3685882b3/" target="_blank" rel="noopener noreferrer">Anurag</a> 2024
+            </div>
+        </body>
+        </html>
